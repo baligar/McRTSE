@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CoSSD samples</title>
+    <link rel="icon" href="images/icons/paper.png">
+    <style>
+        /* Add custom CSS for the image grid */
+        .container {
+            max-width: 600px; /* Limit the container width */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 10px; /* Gap between images */
+        }
+
+        .image-grid img {
+            width: 100%; /* Make images responsive */
+            border: 1px solid #ddd; /* Optional: Add a border to the images */
+            border-radius: 5px; /* Optional: Add rounded corners to the images */
+        }
+
+        /* Add custom CSS for text */
+        .text-container {
+            padding: 0 20px; /* Add left and right padding to create spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4 text-center"> <!-- Added a div to center-align the title and image grid -->
+        <h1>McRTSE: MULTI-CHANNEL REVERBERANT TARGET SOUND EXTRACTION</h1>
+        <hr>
+        <div class="container mt-6 text-container"> <!-- Added a div for text content -->
+            <p class="text-center"><b>Author:</b></p>
+            <p class="text-center"><b>About:</b> We address the challenge of target sound extraction and detection in reverberant environments for general sound classes. We highlight the limitations of existing approaches when applied to reverberant conditions. In response, we develop an end-to-end Multi-channel Reverberant Target Sound Extraction (McRTSE) model, that outperforms current methods in these conditions. Recognizing the need for realistic training datasets, we introduce the rNIGENS and rNIGENS-XL datasets, which reflect realistic reverberant mixtures. We evaluate McRTSE extensively and show its robustness in handling challenging reverberant audio soundscapes.</p>
+        </div>
+        <hr>
+
+        <!-- Image Grid -->
+        <div class="container mt-4">
+            <div class="image-grid">
+                <img src="images/xLarge_room_RIR.png" alt="Image 1">
+                <img src="images/large_room_RIR.png" alt="Image 2">
+                <img src="images/dual_mic_setup.png" alt="Image 3">
+                <img src="images/triple_mic_room.png" alt="Image 4">
+                <img src="images/mcrtse_model.png" alt="Image 5">
+                <img src="images/plot_snapshot_epochs.png" alt="Image 6">
+            </div>
+        </div>
+
+        <!-- Box Drive Link -->
+        <div class="container mt-4 text-center">
+            <p><b>Link to download the RIRs:</b> <a href="https://www.box.com/your-link-here" target="_blank">Download</a></p>
+        </div>
+
+        <!-- Blank Space -->
+        <div style="height: 2in;"></div>
+    </div>
+</body>
+</html>
