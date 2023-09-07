@@ -1,0 +1,25 @@
+<style>
+    /* Add custom CSS for the image grid */
+    .container {
+        max-width: 800px !important; /* Increase the max-width to make the container wider */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 10px; /* Gap between images */
+    }
+
+    .image-grid img {
+        width: 100%; /* Make images responsive */
+        max-width: 800px; /* Set the maximum width for images (adjust as needed) */
+        border: 1px solid #ddd; /* Optional: Add a border to the images */
+        border-radius: 5px; /* Optional: Add rounded corners to the images */
+    }
+
+    /* Add custom CSS for text */
+    .text-container {
+        padding: 0 20px; /* Add left and right padding to create spacing */
+    }
+</style>
